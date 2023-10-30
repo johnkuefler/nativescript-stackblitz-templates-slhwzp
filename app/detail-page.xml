@@ -1,0 +1,7 @@
+<Page navigatingTo="onNavigatingTo">
+    <StackLayout>
+        <Image id="image" width="300"/>
+        <Label text="" class="text-center text-xl font-bold" id="detail"/>
+        <Label text="" class="text-center text-xl" id="title"/>
+    </StackLayout>
+</Page>

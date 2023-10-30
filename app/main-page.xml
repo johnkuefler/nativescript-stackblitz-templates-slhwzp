@@ -1,8 +1,13 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
-    <ActionBar title="My App" icon="" />
-    <StackLayout class="p-4">
-        <Label text="Please tap me" class="text-3xl text-center" />
-        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
-        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
+<Page loaded="pageLoaded">
+    <StackLayout>
+        <Label text="My List"/>
+        <ListView id="myListView" itemTap="onItemTap">
+            <ListView.itemTemplate>
+                <StackLayout orientation="horizontal">
+                    <Image src="{{profilePicture}}" height="50" class="mr-5"/>
+                    <Label class="text-xl" text="{{ name }}" />
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
     </StackLayout>
 </Page>
