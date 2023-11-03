@@ -1,12 +1,13 @@
 const ObservableArray = require("@nativescript/core/data/observable-array").ObservableArray;
 const frameModule = require("@nativescript/core/ui/frame");
-const axios = require('axios');
 
 exports.pageLoaded = async function(args) {
   const page = args.object;
   const listView = page.getViewById("myListView");
 
-  const userData = await axios.get('https://jsonplaceholder.typicode.com/users')
+  //const userData = await axios.get('https://jsonplaceholder.typicode.com/users')
+
+  const userData = [];
 
   listView.items = userData;
 };
