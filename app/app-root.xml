@@ -1,19 +1,2 @@
-<BottomNavigation id="bottomNav" selectedIndex="0">
-    <TabStrip>
-        <TabStripItem>
-            <Image src=""/>
-            <Label text="Simple List"></Label>
-        </TabStripItem>
-        <TabStripItem>
-            <Image src=""/>
-            <Label text="Advanced List"></Label>
-        </TabStripItem>
-    </TabStrip>
-    <TabContentItem>
-        <Frame id="simple" defaultPage="main-page"></Frame>
-    </TabContentItem>
-    <TabContentItem>
-        <Frame id="advanced" defaultPage="advanced-list"></Frame>
-    </TabContentItem>
-</BottomNavigation>
-
+<Frame id="simple" defaultPage="advanced-list"></Frame>
+  

@@ -1,6 +1,12 @@
 <Page loaded="pageLoaded">
     <StackLayout>
-        <Label text="Advanced List"/>
-    
+        <Label text="My List"/>
+        <ListView id="myListView" itemTap="onItemTap">
+            <ListView.itemTemplate>
+                <StackLayout orientation="horizontal">
+                    <Label class="text-xl" text="{{ name }}" />
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
     </StackLayout>
 </Page>
