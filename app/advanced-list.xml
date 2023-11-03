@@ -1,0 +1,6 @@
+<Page loaded="pageLoaded">
+    <StackLayout>
+        <Label text="Advanced List"/>
+    
+    </StackLayout>
+</Page>
