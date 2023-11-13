@@ -31,6 +31,12 @@ async function getUserData() {
   return data;
 }
 
+async function getPetData() {
+  const response = await fetch('https://cs300-db-demo.onrender.com/pets/api?key=1234xyz');
+  let data = await response.json();
+  return data;
+}
+
 exports.onItemTap = function(args) {
   const listView = args.object;
   const index = args.index;
